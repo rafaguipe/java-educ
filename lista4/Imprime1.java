@@ -21,17 +21,19 @@ Use dois laços aninhados, ou seja, imprima a primeira linha com o laço, e na
 public class Imprime1{
 
 
-	public static void main(String args[]){
+ public static void main(String args[]){
 
-		for(int i=0;i<10;i++){
-			for (int j=0;j<10;j++){
-				System.out.print(j+" ");
-			}
-			System.out.println();
+  for(int i=0;i<10;i++){
+    //System.out.println();
+    
+    for (int j=0;j<10;j++){
+    System.out.print(j+" ");
+   }
+   System.out.println();
 
-		}
+  }
 
 
-	}
+ }
 
 }

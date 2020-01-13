@@ -21,18 +21,18 @@ Dica: Isto é o mesmo que o exercício 4, mas o laço (loop) de dentro não 
 public class Imprime3{
 
 
-	public static void main(String args[]){
+ public static void main(String args[]){
 
-		for(int i=0;i<10;i++){
-			for (int j=0;j<i+1;j++){
-				System.out.print(j+" ");
-			}
-			System.out.println();
+  for(int i=0;i<10;i++){
+   for (int j=0;j<i+1;j++){
+    System.out.print(j+" ");
+   }
+   System.out.println();
 
-		}
+  }
 
 
 
-	}
+ }
 
 }
