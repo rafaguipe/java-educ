@@ -15,10 +15,8 @@ public class Imprime6{
 
 	public static void main(String args[]){
 
-		int j = 0;
-
 		for(int i=0;i<11;i++){
-			for (j=1;j<11-i;j++){
+			for (int j=1;j<11-i;j++){
 				System.out.print("  ");
 			}
 			for (int k=1;k<i;k++){
