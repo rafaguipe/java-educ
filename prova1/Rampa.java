@@ -30,10 +30,11 @@ public class Rampa{
 	public static void imprime(){
 
 		for(int i=0;i<10;i++){
-			System.out.println();
 			for(int j=9;j>i-1;j--){
-				System.out.print(j);
+				System.out.print(j+" ");
 			}
+			System.out.println();
+			
 		}
 		System.out.println();
 	}

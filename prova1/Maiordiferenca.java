@@ -8,6 +8,7 @@ QUESTAO: Escreva uma função que receba um vetor como parâmetro, a sua func
 int maiorABS(int V[]){...}
 
 */
+//import java.lang.Math.abs;
 
 public class Maiordiferenca{
 
@@ -37,7 +38,7 @@ public class Maiordiferenca{
 			}
 
 		}
-		return max-min;
+		return java.lang.Math.abs(max-min);
 	}
 
 }
