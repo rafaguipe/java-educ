@@ -16,24 +16,9 @@ public class Exercicio3{
 
 		int v[] = new int[args.length];
 		
-
-		try{
 			for(int i=0;i<args.length;i++){
 				v[i] = Integer.parseInt(args[i]);
-				
-				//if(args.length != 2){
-				//	System.out.println("ERRO: numero de argumentos diferente de 2");
-				//	break;
-				//}
-				//if(v[1]< 0){
-				//	System.out.println("ERRO: o segundo argumento não eh numero NATURAL");
-				//	break;	
-				//}
 			}
-		}
-		catch(java.lang.ArrayIndexOutOfBoundsException excep){
-			System.out.println("ERRO: numero de argumentos diferente de 2");
-		}
 
 		System.out.println(potencia(v));
 	}
