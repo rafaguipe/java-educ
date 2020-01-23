@@ -14,8 +14,35 @@ public class Imprime6{
 
 
 	public static void main(String args[]){
+		// i: nova linha. Vai de 1 ateh 8 (<9)
+		for(int i=1;i<9;i++){
+			// j: espaço em branco. Vai de 1 ateh 
+			for (int j=1;j<9-i;j++){
+			// imprimi hifem para fins didativos somente. Para o exercicio se imprime espaço em branco.
+				System.out.print("--");
+			}
+			// k: numero, triangulo da esquerda /|
+			for (int k=1;k<i+1;k++){
+				System.out.print(k + " ");
+			}
+			// l: numero, triangulo da direita |\
+			for (int l=i-1;l>0;l--){
+				System.out.print(l + " ");
+			}
+			//nova linha do loop de 'i'
+			System.out.println();
 
-		for(int i=0;i<10;i++){
+		}
+
+
+
+	}
+
+}
+
+/*
+for(int i=0;i<11;i++){
+			// j: espaço em branco
 			for (int j=1;j<11-i;j++){
 				System.out.print("  ");
 			}
@@ -27,10 +54,4 @@ public class Imprime6{
 			}
 			System.out.println();
 
-		}
-
-
-
-	}
-
-}
+*/
