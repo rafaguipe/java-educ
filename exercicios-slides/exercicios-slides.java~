@@ -1,0 +1,13 @@
+import java.util.Scanner
+  public class Ex1vetorprof{
+  public static void main(String args[]){
+    Scanner entrada = new Scanner (System.in);
+    int tamanho;
+    
+    System.out.print("digite o tamanho do vetor:");
+    tamanho = entrada.nextInt();
+    
+    int V[] = new int []
+  }
+}
+ 
