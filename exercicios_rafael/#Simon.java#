@@ -1,0 +1,90 @@
+/* RAFAEL Guimaraes Pereira
+2-Fev-2020 @ 21h37
+SÅ„o Paulo / BR
+
+Jogo 'Simon' para repetir sequencias musicais
+*/
+
+import java.util.Scanner; 
+import java.util.Random;
+import java.util.*; //list
+import java.util.Random;
+
+
+public class Simon{
+
+	public static void main(String args[]){
+		TelaInicial();
+
+		int rodada = 1;
+		int tamanho; //tamanho da sequencia
+
+		//cria a sequencia de sons que vai ser acrescido de 1 a cada rodada
+		List sequencia = new ArrayList();
+		List resposta = new ArrayList();
+
+		while(rodada<10){
+			tamanho = AddValor(sequencia);
+			resposta = LeRespostaUsuario(tamanho);//informa o tamanho, quantas respostas esperar
+			if(Compara()==false){
+				Perdeu();
+				break;
+			}
+
+			rodada++;
+		}
+		System.out.println("sequencia"+ sequencia);
+		System.out.println("resposta"+ resposta);
+	}
+
+
+	public static int AddValor(List lista){
+		//cria o objeto para numero randomico
+		Random rand = new Random();
+
+		lista.add(rand.nextInt(4)+1);
+		return lista.size(); // retorna com o tamanho da sequencia
+	}
+
+	public static List LeRespostaUsuario(int tamanho){
+		Scanner entrada = new Scanner(System.in);
+		List aux = new ArrayList();
+OB		for(int i=0;i<tamanho;i++){
+			aux.add(entrada.nextInt());
+		}
+		return aux;
+	}
+
+	public static boolean Compara(){
+		System.out.println("compara");
+		return false;
+OA	}
+
+	public static void TelaInicial(){
+		//apaga tela
+		System.out.print("\033\143");
+		//imprime o seguinte:
+		System.out.println("=========================");
+		System.out.println("Jogo Simon");
+		System.out.println("v. 2020-02-02");
+		System.out.println("Repita a sequencia");
+		System.out.println("");
+		System.out.println("(RGP)");
+		System.out.println("=========================");
+		System.out.println("");
+	}
+
+	public static void Perdeu(){
+		Beep();
+		System.out.println("GAME OVER");
+		
+	}
+
+	public static void Beep(){
+		//beep
+		System.out.print("\007");
+	}
+
+}
+
+
