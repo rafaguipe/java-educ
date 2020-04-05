@@ -5,20 +5,15 @@ São Paulo / BR
 Jogo 'Simon' para repetir sequencias musicais
 */
 
-package dtmf;
-
 import java.util.Scanner; 
 import java.util.Random;
 import java.util.*; //list
-import java.util.Random;
-import java.lang.*;
+//import java.lang.*;
 
 
 public class Simon{
 
 	public static void main(String args[]){
-		AudioClip toneZero;
-		toneZero  = getAudioClip(getCodeBase(), "zero.au");
 
 		int rodada = 1;
 		int tamanho; //tamanho da sequencia
@@ -36,6 +31,9 @@ public class Simon{
 			if(Compara(sequencia,resposta)==false){
 				Finaliza(sequencia, resposta);
 				break;
+			}
+			else{
+			  System.out.println("Acertou !");
 			}
 			rodada++;
 		}
